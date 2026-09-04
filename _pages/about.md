@@ -16,9 +16,8 @@ redirect_from:
     
     <p>You can reach me at <a href="mailto:zhjiaxu@connect.hku.hk">zhjiaxu@connect.hku.hk</a>.</p>
     
-    <p>📄 <a href="/files/cv.pdf">Download my latest CV</a></p>
   </div>
 
-  <img src="/images/photo2.JPG" width="240" style="border-radius: 8px; flex-shrink: 0; margin-top: 5px;">
+  <img src="/images/photo2.JPG" width="350" style="border-radius: 8px; flex-shrink: 0; margin-top: 5px;">
   
 </div>
