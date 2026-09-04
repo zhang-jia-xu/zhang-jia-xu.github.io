@@ -9,7 +9,7 @@ redirect_from:
 
 <div style="display: flex; align-items: flex-start; justify-content: space-between;">
   
-  <div style="flex: 1; padding-right: 40px; text-align: justify;">
+  <div style="flex: 1; padding-right: 40px; text-align: left;">
     <p>I am a Ph.D. candidate in Management and Strategy at the University of Hong Kong. I obtained a Bachelor of Economics degree from Wuhan University and a Master of Economics degree from the University of Hong Kong.</p>
     
     <p>My research interests lie in international trade, organizational economics, and applied microeconomics. I am particularly interested in global sourcing and how firms can leverage their organizational form for supply chain reallocation.</p>
