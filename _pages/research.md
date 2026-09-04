@@ -44,5 +44,4 @@ author_profile: true
 
 **"Supply Chain Reallocation after Disasters"** 
 
-**"Anti-dumpting Investigation"** (with Chang Sun)
 **"Anti-dumping Investigation"** (with Chang Sun)
