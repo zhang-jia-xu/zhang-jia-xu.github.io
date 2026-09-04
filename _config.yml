@@ -23,8 +23,13 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
+<<<<<<< HEAD
   avatar           : ""
   name             : "Zhang Jiaxu（张嘉栩）"
+=======
+  avatar           : "profile.png"
+  name             : "Jiaxu Zhang（张嘉栩）"
+>>>>>>> e28d882669b1ab2e4dc98c91be7eb3aad4a4b189
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. in Management and Strategy"
   location         : "Hong Kong SAR, China"
