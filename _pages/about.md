@@ -9,7 +9,7 @@ redirect_from:
 
 <style>
   .page__title {
-    margin-top: 10px !important; /* 调整这个数值：如果是负数就往上移，正数就往下移 */
+    margin-top: 8px !important; /* 调整这个数值：如果是负数就往上移，正数就往下移 */
   }
   .profile-wrap {
     display: flex;
