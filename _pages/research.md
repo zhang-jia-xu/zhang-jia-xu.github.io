@@ -7,10 +7,10 @@ author_profile: true
 
 ## Working Papers
 
-**"Communication Costs, Direct Flights and International Trade"** (with Taiji Furusawa, Heiwai Tang, and Chang Sun), revise and resubmit, *Journal of International Economics*, Aug 2026
+**"Communication Costs, Direct Flights and International Trade"** (with Taiji Furusawa, Heiwai Tang, and Chang Sun), revise and resubmit, *Journal of International Economics*, Aug 2026.
 
 <details>
-  <summary style="cursor: pointer; color: #494e52; display: flex; align-items: center;">
+  <summary style="cursor: pointer; display: flex; align-items: center;">
     <b>[ &#9654; Abstract ]</b>
     <span style="margin-left: 15px;"><b>[ <a href="/files/paper_Airlines.pdf">Working Paper</a> ]</b></span>
   </summary>
@@ -20,11 +20,11 @@ author_profile: true
   </p>
 </details>
 
-**"Vertical Integration and the Sourcing Style"**, Oct 2025
+**"Vertical Integration and the Sourcing Style"**, Oct 2025.
 *Draft available upon request.*
 
 <details>
-  <summary style="cursor: pointer; color: #494e52; display: flex; align-items: center;">
+  <summary style="cursor: pointer; display: flex; align-items: center;">
     <b>[ &#9654; Abstract ]</b>
     <span style="margin-left: 15px;"><b>[ <a href="mailto:zhjiaxu@connect.hku.hk?subject=Request for Draft: Vertical Integration and the Sourcing Style">Request Draft</a> ]</b></span>
   </summary>
@@ -34,10 +34,10 @@ author_profile: true
   </p>
 </details>
 
-**"Production and Ownership Networks"** (with Cheng Chen, Chang Sun, and Hongyong Zhang), Sep 2026
+**"Production and Ownership Networks"** (with Cheng Chen, Chang Sun, and Hongyong Zhang), Sep 2026.
 
 <details>
-  <summary style="cursor: pointer; color: #494e52; display: flex; align-items: center;">
+  <summary style="cursor: pointer; display: flex; align-items: center;">
     <b>[ &#9654; Abstract ]</b>
     <span style="margin-left: 15px;"><b>[ <a href="/files/paper_TSR.pdf">Working Paper</a> ]</b></span>
   </summary>
@@ -51,6 +51,6 @@ author_profile: true
 
 ## Work in Progress
 
-**"Supply Chain Reallocation after Disasters"** 
+**"Supply Chain Reallocation after Disasters"**.
 
-**"Anti-dumping Investigation"** (with Chang Sun)
+**"Anti-dumping Investigation"** (with Chang Sun).
