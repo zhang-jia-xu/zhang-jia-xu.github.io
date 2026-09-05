@@ -12,6 +12,7 @@ redirect_from:
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-top: 40px;
   }
   .profile-text {
     flex: 1;
@@ -19,7 +20,7 @@ redirect_from:
     text-align: left;
   }
   .profile-pic {
-    width: 375px;
+    width: 365px;
     border-radius: 8px;
     flex-shrink: 0;
     margin-top: 5px;
@@ -34,7 +35,7 @@ redirect_from:
     }
     .profile-pic {
       width: 100%; /* 照片宽度撑满手机屏幕 */
-      max-width: 375px;
+      max-width: 365px;
       margin-bottom: 20px;
       margin-top: 20px;
     }
