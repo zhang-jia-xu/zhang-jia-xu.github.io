@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Zhang Jiaxu"
+title                    : "Zhang Jiaxu 张嘉栩"
 title_separator          : "-"
 name                     : &name "张嘉栩"
 description              : &description "Zhang Jiaxu's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -24,7 +24,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : false
-  name             : "Zhang Jiaxu（张嘉栩）"
+  name             : "Zhang Jiaxu 张嘉栩"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. in Management and Strategy"
   location         : "Hong Kong SAR, China"

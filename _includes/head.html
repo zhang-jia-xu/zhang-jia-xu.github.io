@@ -14,3 +14,12 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+
+<style>
+  /* 在手机端隐藏文字导航（CV），但保留主题切换图标 */
+  @media screen and (max-width: 768px) {
+    .greedy-nav .visible-links .masthead__menu-item { 
+      display: none !important; 
+    }
+  }
+</style>
