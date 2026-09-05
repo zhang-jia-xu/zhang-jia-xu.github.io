@@ -8,11 +8,14 @@ redirect_from:
 ---
 
 <style>
+  .page__title {
+    margin-top: 10px !important; /* 调整这个数值：如果是负数就往上移，正数就往下移 */
+  }
   .profile-wrap {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .profile-text {
     flex: 1;
