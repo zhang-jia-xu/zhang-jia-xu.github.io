@@ -19,7 +19,7 @@ redirect_from:
     text-align: left;
   }
   .profile-pic {
-    width: 400px;
+    width: 375px;
     border-radius: 8px;
     flex-shrink: 0;
     margin-top: 5px;
@@ -34,7 +34,7 @@ redirect_from:
     }
     .profile-pic {
       width: 100%; /* 照片宽度撑满手机屏幕 */
-      max-width: 400px;
+      max-width: 375px;
       margin-bottom: 20px;
       margin-top: 20px;
     }
