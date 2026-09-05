@@ -5,6 +5,13 @@ permalink: /research/
 author_profile: true
 ---
 
+<style>
+  /* 独立微调 Research 页面主标题的顶部位置 */
+  .page__title {
+    margin-top: 8px !important; /* 调整这个数值：不同于主页，这里可以独立设定 */
+  }
+</style>
+
 ## Working Papers
 
 **"Communication Costs, Direct Flights and International Trade"** (with Taiji Furusawa, Heiwai Tang, and Chang Sun), revise and resubmit, *Journal of International Economics*, Aug 2026.
