@@ -97,7 +97,7 @@ author_profile: true
   </summary>
   
   <p style="margin-top: 10px; margin-bottom: 1.5em; text-align: left;">
-  <i>Using data on both buyer-supplier and owner-subsidiary links between Japanese firms, we characterize the interconnection between production and ownership networks. In the cross-section, we find that the majority of the owner-subsidiary links are also buyer-supplier links, highlighting the role of goods or services transactions in vertical relationships. In addition, we find that firms are more likely to use buyers/suppliers that are already adopted by related parties, suggesting an indirect benefit of integration.</i>
+  <i>Using data on both buyer-supplier and owner-subsidiary links between Japanese firms, we characterize the interconnection between production and ownership networks. In the cross-section, we find that the majority of the owner-subsidiary links are also buyer-supplier links, highlighting the role of goods or services transactions in vertical relationships. In addition, we find that firms are more likely to use buyers/suppliers that are already adopted by related parties, suggesting an indirect benefit of integration. We also select a subsample of incidental mergers, and employing propensity score matching with difference-in-differences methods, provid evidence of a causal inference regarding this effect. Leveraging industry heterogeneity among upstream firms, we argue that the ownership network facilitates the use of related-party suppliers by subsidiaries through the mechanism of reducing contractual frictions and search costs.</i>
   </p>
 </details>
 
