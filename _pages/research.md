@@ -41,7 +41,7 @@ author_profile: true
   </p>
 </details>
 
-**"Production and Ownership Networks"** (with Cheng Chen, Chang Sun, and Hongyong Zhang), Sep 2026.
+**"Production and Ownership Networks"** (with Cheng Chen, Chang Sun, and Hongyong Zhang), Oct 2026.
 
 <details>
   <summary style="cursor: pointer; display: flex; align-items: center;">
