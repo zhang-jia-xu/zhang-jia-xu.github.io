@@ -8,7 +8,7 @@ author_profile: true
 <style>
   /* 独立微调 Research 页面主标题的顶部位置（保留你之前的设置） */
   .page__title {
-    margin-top: -20px !important; 
+    margin-top: 8px !important; 
   }
 
   /* 1. 限制点击区域，只包裹文字宽度，点空白处不再触发 */
