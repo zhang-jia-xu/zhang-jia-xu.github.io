@@ -6,19 +6,66 @@ author_profile: true
 ---
 
 <style>
-  /* 独立微调 Research 页面主标题的顶部位置 */
+  /* 独立微调 Research 页面主标题的顶部位置（保留你之前的设置） */
   .page__title {
-    margin-top: 8px !important; /* 调整这个数值：不同于主页，这里可以独立设定 */
+    margin-top: -20px !important; 
+  }
+
+  /* 1. 限制点击区域，只包裹文字宽度，点空白处不再触发 */
+  .abstract-summary {
+    cursor: pointer;
+    display: inline-flex;  /* 让它紧凑排列 */
+    align-items: center;
+    width: max-content;    /* 关键：宽度仅限文字大小，不拉伸到整行 */
+    list-style: none;      /* 隐藏系统自带的默认小三角 */
+  }
+  .abstract-summary::-webkit-details-marker {
+    display: none;         /* 针对苹果设备的隐藏 */
+  }
+
+  /* 2. 给小箭头单独加一个平滑的旋转动画 */
+  .arrow-icon {
+    display: inline-block;
+    transition: transform 0.25s ease; /* 0.25秒的平滑转身 */
+  }
+  
+  /* 3. 当菜单处于展开 (open) 状态时，箭头向下旋转 90 度 */
+  details[open] .arrow-icon {
+    transform: rotate(90deg);
+  }
+
+/* JMP 高亮标签专属样式 (白天模式/默认) */
+  .jmp-tag {
+    display: inline-block;
+    background-color: #8b1c1c; /* 白天：沉稳的暗红色 */
+    color: #ffffff;            /* 纯白文字 */
+    font-size: 0.55em;         
+    font-weight: 600;
+    padding: 3px 8px;          
+    border-radius: 4px;        
+    vertical-align: middle;    
+    margin-left: 10px;         
+    position: relative;
+    top: -2px;                 
+    letter-spacing: 0.5px;
+  }
+
+  /* JMP 高亮标签 - 自动适配夜间模式 (Dark Mode) */
+  @media (prefers-color-scheme: dark) {
+    .jmp-tag {
+      background-color: #e55353; /* 夜间：换成更明亮的亮红色/珊瑚红，防止和黑底融合 */
+      color: #ffffff;            /* 文字保持白色 */
+    }
   }
 </style>
 
 ## Working Papers
 
-**"Communication Costs, Direct Flights and International Trade"** (with Taiji Furusawa, Heiwai Tang, and Chang Sun), revise and resubmit, *Journal of International Economics*, Aug 2026.
+**"Communication Costs, Direct Flights and International Trade"** <span class="jmp-tag">Job Market Paper</span> <br> (with Taiji Furusawa, Heiwai Tang, and Chang Sun), revise and resubmit, *Journal of International Economics*, Aug 2026.
 
 <details>
-  <summary style="cursor: pointer; display: flex; align-items: center;">
-    <b>[ &#9654; Abstract ]</b>
+  <summary class="abstract-summary">
+    <b>[ <span class="arrow-icon">&#9654;</span> Abstract ]</b>
     <span style="margin-left: 15px;"><b>[ <a href="/files/paper_Airlines.pdf">Working Paper</a> ]</b></span>
   </summary>
   
@@ -31,8 +78,8 @@ author_profile: true
 *Draft available upon request.*
 
 <details>
-  <summary style="cursor: pointer; display: flex; align-items: center;">
-    <b>[ &#9654; Abstract ]</b>
+  <summary class="abstract-summary">
+    <b>[ <span class="arrow-icon">&#9654;</span> Abstract ]</b>
     <span style="margin-left: 15px;"><b>[ <a href="mailto:zhjiaxu@connect.hku.hk?subject=Request for Draft: Vertical Integration and the Sourcing Style">Request Draft</a> ]</b></span>
   </summary>
   
@@ -44,8 +91,8 @@ author_profile: true
 **"Production and Ownership Networks"** (with Cheng Chen, Chang Sun, and Hongyong Zhang), Oct 2026.
 
 <details>
-  <summary style="cursor: pointer; display: flex; align-items: center;">
-    <b>[ &#9654; Abstract ]</b>
+  <summary class="abstract-summary">
+    <b>[ <span class="arrow-icon">&#9654;</span> Abstract ]</b>
     <span style="margin-left: 15px;"><b>[ <a href="/files/paper_TSR.pdf">Working Paper</a> ]</b></span>
   </summary>
   
@@ -56,7 +103,7 @@ author_profile: true
 
 ---
 
-## Work in Progress
+## Selected Work in Progress
 
 **"Supply Chain Reallocation after Disasters"**.
 
