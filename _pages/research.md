@@ -74,7 +74,7 @@ author_profile: true
   </p>
 </details>
 
-**"Vertical Integration and the Sourcing Style"**, Oct 2025.
+**"Vertical Integration and the Sourcing Style"**, Sept 2026.
 *Draft available upon request.*
 
 <details>
@@ -103,8 +103,5 @@ author_profile: true
 
 ---
 
-## Selected Work in Progress
-
-**"Supply Chain Reallocation after Disasters"**.
-
-**"Anti-dumping Investigation"** (with Chang Sun).
+## Work in Progress
+**"Firm-specific Policy, Resource Allocation, and Optimal Tariffs"** (with Chang Sun).
