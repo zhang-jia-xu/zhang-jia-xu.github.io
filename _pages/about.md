@@ -49,7 +49,7 @@ redirect_from:
   <div class="profile-text">
     <p>I am a Ph.D. candidate in Management and Strategy at the University of Hong Kong. I obtained a Bachelor of Economics degree from Wuhan University and a Master of Economics degree from the University of Hong Kong.</p>
     
-    <p>My research interests lie in international trade, organizational economics, and applied microeconomics. I am particularly interested in global sourcing and how firms can leverage their organizational form for supply chain reallocation.</p>
+    <p>My research interests lie in international trade, organizational economics, and applied microeconomics. I am particularly interested in global sourcing, production network, and how firms can leverage their organizational form for supply chain reallocation.</p>
     
     <p>You can reach me at <a href="mailto:zhjiaxu@connect.hku.hk">zhjiaxu@connect.hku.hk</a>.</p>
     
