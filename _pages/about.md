@@ -9,7 +9,7 @@ redirect_from:
 
 <style>
   .page__title {
-    margin-top: 8px !important; /* 调整这个数值：如果是负数就往上移，正数就往下移 */
+    margin-top: 8px !important; 
   }
   .profile-wrap {
     display: flex;
@@ -28,19 +28,22 @@ redirect_from:
     flex-shrink: 0;
     margin-top: 5px;
   }
-  /* 当屏幕宽度小于 768px (手机端) 时执行以下排版 */
-  @media (max-width: 768px) {
+  
+  /* 核心修复：针对手机、平板，以及任何竖向放置的显示器 */
+  @media (max-width: 1024px), (orientation: portrait) {
     .profile-wrap {
-      flex-direction: column-reverse; /* 将照片调至文字上方 */
+      flex-direction: column-reverse; /* 照片在上，文字在下 */
+      align-items: center;            /* 让照片在竖屏时居中，显得更规整 */
     }
     .profile-text {
-      padding-right: 0; /* 取消右侧留白 */
+      padding-right: 0; 
+      width: 100%;                    /* 确保文字彻底释放，撑满整行宽度 */
     }
     .profile-pic {
-      width: 100%; /* 照片宽度撑满手机屏幕 */
-      max-width: 360px;
-      margin-bottom: 20px;
-      margin-top: 20px;
+      width: 100%; 
+      max-width: 320px;               /* 竖屏下微调照片最大宽度，防止变得突兀和巨大 */
+      margin-bottom: 30px;            /* 照片与文字之间的距离 */
+      margin-top: 10px;
     }
   }
 </style>
