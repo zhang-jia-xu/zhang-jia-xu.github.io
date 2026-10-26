@@ -8,9 +8,23 @@ redirect_from:
 ---
 
 <style>
-  .page__title {
-    margin-top: 8px !important; 
+  /* 1. 彻底清除左侧边栏的“幽灵占位符”和默认留白 */
+  .author__avatar {
+    display: none !important;
   }
+  .author__name, .author__profile, .sidebar {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* 2. 让主标题也归零，实现真正的物理水平对齐 */
+  .page__title {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    line-height: 1 !important;
+  }
+
+  /* 3. 保持你之前写好的右侧正文与照片排版 */
   .profile-wrap {
     display: flex;
     align-items: flex-start;
@@ -29,20 +43,20 @@ redirect_from:
     margin-top: 5px;
   }
   
-  /* 核心修复：针对手机、平板，以及任何竖向放置的显示器 */
+  /* 4. 针对手机、平板及竖屏显示器的响应式优化 */
   @media (max-width: 1024px), (orientation: portrait) {
     .profile-wrap {
-      flex-direction: column-reverse; /* 照片在上，文字在下 */
-      align-items: center;            /* 让照片在竖屏时居中，显得更规整 */
+      flex-direction: column-reverse;
+      align-items: center;            
     }
     .profile-text {
       padding-right: 0; 
-      width: 100%;                    /* 确保文字彻底释放，撑满整行宽度 */
+      width: 100%;                    
     }
     .profile-pic {
       width: 100%; 
-      max-width: 320px;               /* 竖屏下微调照片最大宽度，防止变得突兀和巨大 */
-      margin-bottom: 30px;            /* 照片与文字之间的距离 */
+      max-width: 320px;               
+      margin-bottom: 30px;            
       margin-top: 10px;
     }
   }
