@@ -8,7 +8,27 @@ redirect_from:
 ---
 
 <style>
-  /* 纯净的照片响应式排版，彻底删除所有 CSS 的高度干预 */
+  /* 1. 常规横向电脑屏幕（横屏，且宽度较大） */
+  @media (min-width: 1025px) and (orientation: landscape) {
+    .page__title {
+      margin-top: 8px !important; /* 你之前在横屏测试完美的数值 */
+    }
+  }
+
+  /* 2. 竖向大显示器 / 平板电脑（竖屏，且宽度足以并排显示左右两列） */
+  @media (min-width: 768px) and (orientation: portrait) {
+    .page__title {
+      /* 请在你的大竖屏上用审查元素测试，填入能让它对齐的精确数值（如 20px 或 24px） */
+      margin-top: 24px !important; 
+    }
+  }
+
+  /* 彻底隐藏左侧空头像占位符，消除基础误差 */
+  .author__avatar {
+    display: none !important;
+  }
+
+  /* ---------------- 下方保留你的照片响应式排版 ---------------- */
   .profile-wrap {
     display: flex;
     align-items: flex-start;
@@ -27,7 +47,8 @@ redirect_from:
     margin-top: 5px;
   }
   
-  @media (max-width: 1024px), (orientation: portrait) {
+  /* 手机端由于变成上下堆叠，不需要干预左右对齐 */
+  @media (max-width: 767px) {
     .profile-wrap {
       flex-direction: column-reverse;
       align-items: center;            
@@ -44,34 +65,6 @@ redirect_from:
     }
   }
 </style>
-
-<script>
-  /* 自动追踪对齐脚本：告别死像素，跨容器物理对齐 */
-  function autoAlignTitle() {
-    const leftName = document.querySelector('.author__name');
-    const rightTitle = document.querySelector('.page__title');
-    
-    if (leftName && rightTitle) {
-      // 1. 每次计算前先重置偏移，获取最原始的自然落差
-      rightTitle.style.transform = 'none'; 
-      
-      // 2. 物理抓取左侧名字和右侧标题在屏幕上的绝对高度
-      const leftRect = leftName.getBoundingClientRect();
-      const rightRect = rightTitle.getBoundingClientRect();
-      
-      // 3. 只有当屏幕宽度足够（处于左右分栏状态）时，才执行平移对齐
-      if (leftRect.right < rightRect.left) {
-        const heightDiff = leftRect.top - rightRect.top;
-        // 精确下推自然落差的距离
-        rightTitle.style.transform = `translateY(${heightDiff}px)`;
-      }
-    }
-  }
-
-  // 页面加载完毕以及用户拉伸窗口、翻转屏幕时，自动执行计算
-  window.addEventListener('load', autoAlignTitle);
-  window.addEventListener('resize', autoAlignTitle);
-</script>
 
 <div class="profile-wrap">
   <div class="profile-text">
