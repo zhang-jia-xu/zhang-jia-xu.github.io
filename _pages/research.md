@@ -57,13 +57,10 @@ author_profile: true
       color: #ffffff;            /* 文字保持白色 */
     }
   }
-  .coauthor {
-    color: #0056b3 !important;        /* 经典的学术蓝 */
+.coauthor {
     text-decoration: none !important; /* 强制去掉下划线 */
-    border-bottom: none !important;   /* 防止某些模板用边框伪装下划线 */
-  }
-  .coauthor:hover {
-    color: #003d82 !important;        /* 鼠标放上去时颜色稍微加深，替代下划线的互动感 */
+    border-bottom: none !important;   /* 强制去掉可能存在的边框下划线 */
+    box-shadow: none !important;      /* 防止某些主题用阴影做下划线 */
   }
 </style>
 
