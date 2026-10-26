@@ -8,23 +8,7 @@ redirect_from:
 ---
 
 <style>
-  /* 1. 彻底清除左侧边栏的“幽灵占位符”和默认留白 */
-  .author__avatar {
-    display: none !important;
-  }
-  .author__name, .author__profile, .sidebar {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-  
-  /* 2. 让主标题也归零，实现真正的物理水平对齐 */
-  .page__title {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    line-height: 1 !important;
-  }
-
-  /* 3. 保持你之前写好的右侧正文与照片排版 */
+  /* 仅处理照片与文字的左右排版，绝不干涉页面的顶部对齐 */
   .profile-wrap {
     display: flex;
     align-items: flex-start;
@@ -43,7 +27,7 @@ redirect_from:
     margin-top: 5px;
   }
   
-  /* 4. 针对手机、平板及竖屏显示器的响应式优化 */
+  /* 仅在手机、平板及竖屏显示器下，将左右排版改为上下排版 */
   @media (max-width: 1024px), (orientation: portrait) {
     .profile-wrap {
       flex-direction: column-reverse;
