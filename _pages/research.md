@@ -6,9 +6,23 @@ author_profile: true
 ---
 
 <style>
-  /* 独立微调 Research 页面主标题的顶部位置（保留你之前的设置） */
-  .page__title {
-    margin-top: 8px !important; 
+  /* 1. 常规横向电脑屏幕（横屏，且宽度较大） */
+  @media (min-width: 1025px) and (orientation: landscape) {
+    .page__title {
+      margin-top: 8px !important; 
+    }
+  }
+
+  /* 2. 竖向大显示器 / 平板电脑（竖屏，且宽度足以并排显示左右两列） */
+  @media (min-width: 768px) and (orientation: portrait) {
+    .page__title {
+      margin-top: 24px !important; 
+    }
+  }
+
+  /* 彻底隐藏左侧空头像占位符，消除基础误差 */
+  .author__avatar {
+    display: none !important;
   }
 
   /* 1. 限制点击区域，只包裹文字宽度，点空白处不再触发 */
