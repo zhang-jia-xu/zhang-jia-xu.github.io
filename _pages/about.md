@@ -17,12 +17,12 @@ redirect_from:
   }
   .author__avatar { display: none !important; }
 
-  /* 2. 默认大型电脑宽屏排版：左右并排，顶部对齐 */
+  /* 2. 默认大型电脑宽屏排版：左右并排，锁定最佳宽度 */
   .profile-wrap {
     display: flex;
     align-items: flex-start; 
     justify-content: space-between;
-    gap: 30px;
+    gap: 40px;
     margin-top: 30px;
   }
   
@@ -32,14 +32,12 @@ redirect_from:
   }
   
   .profile-pic {
-    width: 30%; 
-    max-width: 320px;
-    min-width: 240px;
-    border-radius: 8px;
+    width: 360px; /* 横屏时固定为 360px，防止被过度压缩 */
     flex-shrink: 0;
+    border-radius: 8px;
   }
 
-  /* 3. iPad 及竖置大屏：上下堆叠，照片基于文本宽度按 60% 比例缩放 */
+  /* 3. iPad 及竖置大屏：上下堆叠，解除固定像素并按比例拉伸 */
   @media (max-width: 1199px), (orientation: portrait) {
     .profile-wrap {
       flex-direction: column-reverse; 
@@ -49,8 +47,8 @@ redirect_from:
       width: 100%;
     }
     .profile-pic {
-      width: 60%; /* 如果觉得偏大或偏小，直接改这里的 60% 即可 */
-      max-width: 100%; 
+      width: 60%; /* 竖屏时自动放大到文本宽度的 60% */
+      max-width: none; 
       margin-bottom: 30px; 
     }
   }
