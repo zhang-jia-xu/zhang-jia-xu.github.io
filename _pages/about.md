@@ -39,19 +39,26 @@ redirect_from:
     flex-shrink: 0;
   }
 
-  /* 3. iPad（无论横竖）及所有窄屏：强制上下堆叠，拒绝挤压文字 */
+  /* 3. iPad 及竖置大屏：上下堆叠，照片基于文本宽度按 60% 比例缩放 */
   @media (max-width: 1199px), (orientation: portrait) {
     .profile-wrap {
-      flex-direction: column-reverse; /* 照片在上，文字在下 */
-      align-items: center; /* 整体居中 */
+      flex-direction: column-reverse; 
+      align-items: center; 
     }
     .profile-text {
       width: 100%;
     }
     .profile-pic {
-      width: 100%;
-      max-width: 320px;
-      margin-bottom: 25px; /* 照片与下方文字的间距 */
+      width: 60%; /* 如果觉得偏大或偏小，直接改这里的 60% 即可 */
+      max-width: 100%; 
+      margin-bottom: 30px; 
+    }
+  }
+
+  /* 4. 极窄手机屏幕保护：空间太小时让照片撑满全宽 */
+  @media (max-width: 767px) {
+    .profile-pic {
+      width: 100%; 
     }
   }
 </style>
