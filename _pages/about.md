@@ -8,15 +8,7 @@ redirect_from:
 ---
 
 <style>
-  /* 终极对齐方案：纯视觉平移，不破坏任何底层网格 */
-  @media (min-width: 768px) {
-    .page__title {
-      /* 向下平移 8px。你可以随意微调这个数值，它绝对不会再引发其他部分的错位 */
-      transform: translateY(8px); 
-    }
-  }
-
-  /* ---------------- 照片与文字排版（保持不变） ---------------- */
+  /* 纯净的照片响应式排版，彻底删除所有 CSS 的高度干预 */
   .profile-wrap {
     display: flex;
     align-items: flex-start;
@@ -52,6 +44,34 @@ redirect_from:
     }
   }
 </style>
+
+<script>
+  /* 自动追踪对齐脚本：告别死像素，跨容器物理对齐 */
+  function autoAlignTitle() {
+    const leftName = document.querySelector('.author__name');
+    const rightTitle = document.querySelector('.page__title');
+    
+    if (leftName && rightTitle) {
+      // 1. 每次计算前先重置偏移，获取最原始的自然落差
+      rightTitle.style.transform = 'none'; 
+      
+      // 2. 物理抓取左侧名字和右侧标题在屏幕上的绝对高度
+      const leftRect = leftName.getBoundingClientRect();
+      const rightRect = rightTitle.getBoundingClientRect();
+      
+      // 3. 只有当屏幕宽度足够（处于左右分栏状态）时，才执行平移对齐
+      if (leftRect.right < rightRect.left) {
+        const heightDiff = leftRect.top - rightRect.top;
+        // 精确下推自然落差的距离
+        rightTitle.style.transform = `translateY(${heightDiff}px)`;
+      }
+    }
+  }
+
+  // 页面加载完毕以及用户拉伸窗口、翻转屏幕时，自动执行计算
+  window.addEventListener('load', autoAlignTitle);
+  window.addEventListener('resize', autoAlignTitle);
+</script>
 
 <div class="profile-wrap">
   <div class="profile-text">
