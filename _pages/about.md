@@ -8,7 +8,12 @@ redirect_from:
 ---
 
 <style>
-  /* 仅处理照片与文字的左右排版，绝不干涉页面的顶部对齐 */
+  /* 核心对齐逻辑：彻底移除左侧空头像容器，消除它带来的隐形高度差 */
+  .author__avatar {
+    display: none !important;
+  }
+
+  /* ---------------- 以下仅保留主页关于照片的响应式排版（research页不需要加这段） ---------------- */
   .profile-wrap {
     display: flex;
     align-items: flex-start;
@@ -27,7 +32,6 @@ redirect_from:
     margin-top: 5px;
   }
   
-  /* 仅在手机、平板及竖屏显示器下，将左右排版改为上下排版 */
   @media (max-width: 1024px), (orientation: portrait) {
     .profile-wrap {
       flex-direction: column-reverse;
