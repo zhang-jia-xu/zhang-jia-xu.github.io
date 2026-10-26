@@ -8,7 +8,15 @@ redirect_from:
 ---
 
 <style>
-  /* 彻底放弃干预顶部对齐，仅保留照片与文字的响应式排版 */
+  /* 终极对齐方案：纯视觉平移，不破坏任何底层网格 */
+  @media (min-width: 768px) {
+    .page__title {
+      /* 向下平移 8px。你可以随意微调这个数值，它绝对不会再引发其他部分的错位 */
+      transform: translateY(8px); 
+    }
+  }
+
+  /* ---------------- 照片与文字排版（保持不变） ---------------- */
   .profile-wrap {
     display: flex;
     align-items: flex-start;
@@ -27,7 +35,6 @@ redirect_from:
     margin-top: 5px;
   }
   
-  /* 竖屏及移动端优化 */
   @media (max-width: 1024px), (orientation: portrait) {
     .profile-wrap {
       flex-direction: column-reverse;
