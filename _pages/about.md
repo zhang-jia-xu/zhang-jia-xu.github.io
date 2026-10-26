@@ -8,22 +8,7 @@ redirect_from:
 ---
 
 <style>
-  /* 1. 彻底隐藏左侧空头像占位符 */
-  .author__avatar {
-    display: none !important;
-  }
-  
-  /* 2. 消除左侧名字自带的顶部推力（防止内部错位） */
-  .author__name {
-    margin-top: 0 !important;
-  }
-
-  /* 3. 终极水平对齐：强制左侧信息区和右侧大标题拥有完全相同的、舒适的顶部距离 */
-  .author__profile, .page__title {
-    margin-top: 30px !important; 
-    padding-top: 0 !important;
-  }
-
+  /* 彻底放弃干预顶部对齐，仅保留照片与文字的响应式排版 */
   .profile-wrap {
     display: flex;
     align-items: flex-start;
@@ -42,7 +27,7 @@ redirect_from:
     margin-top: 5px;
   }
   
-  /* 针对手机、平板及竖屏的响应式优化 */
+  /* 竖屏及移动端优化 */
   @media (max-width: 1024px), (orientation: portrait) {
     .profile-wrap {
       flex-direction: column-reverse;
