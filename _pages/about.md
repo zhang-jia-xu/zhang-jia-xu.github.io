@@ -8,39 +8,51 @@ redirect_from:
 ---
 
 <style>
-  /* 1. 常规横向电脑屏幕（横屏，且宽度较大） */
+  /* 1. 标题对齐微调 */
   @media (min-width: 1025px) and (orientation: landscape) {
     .page__title { margin-top: 8px !important; }
   }
-
-  /* 2. 竖向大显示器 / 平板电脑（竖屏，且宽度足以并排显示左右两列） */
   @media (min-width: 768px) and (orientation: portrait) {
     .page__title { margin-top: 24px !important; }
   }
-
-  /* 彻底隐藏左侧空头像占位符 */
   .author__avatar { display: none !important; }
 
-  /* ---------------- 3. 照片与文字自适应排版 ---------------- */
+  /* 2. 默认大型电脑宽屏排版：左右并排，顶部对齐 */
   .profile-wrap {
     display: flex;
-    flex-wrap: wrap-reverse; /* 空间不足时自动换行，且照片在文字上方 */
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; 
+    justify-content: space-between;
     gap: 30px;
     margin-top: 30px;
   }
   
   .profile-text {
-    flex: 1 1 400px; /* 文字区最小宽度 400px，低于此值则自动触发换行，拒绝挤压 */
+    flex: 1;
     text-align: left;
   }
   
   .profile-pic {
-    flex: 0 0 auto;
-    width: 320px;
-    max-width: 100%;
+    width: 30%; 
+    max-width: 320px;
+    min-width: 240px;
     border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  /* 3. iPad（无论横竖）及所有窄屏：强制上下堆叠，拒绝挤压文字 */
+  @media (max-width: 1199px), (orientation: portrait) {
+    .profile-wrap {
+      flex-direction: column-reverse; /* 照片在上，文字在下 */
+      align-items: center; /* 整体居中 */
+    }
+    .profile-text {
+      width: 100%;
+    }
+    .profile-pic {
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 25px; /* 照片与下方文字的间距 */
+    }
   }
 </style>
 
