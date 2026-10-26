@@ -34,21 +34,21 @@ redirect_from:
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 30px;
+    gap: 30px; /* 添加 gap 增加呼吸感 */
   }
   .profile-text {
     flex: 1;
-    padding-right: 40px;
     text-align: left;
   }
   .profile-pic {
-    width: 360px;
+    width: 320px; /* 桌面端稍微把照片调小一点，给文字留更多空间 */
     border-radius: 8px;
     flex-shrink: 0;
     margin-top: 5px;
   }
   
-  /* 手机端由于变成上下堆叠，不需要干预左右对齐 */
-  @media (max-width: 767px) {
+  /* 关键修改：将断点扩大到 1024px，让 iPad (横/竖屏) 也采用上下堆叠，释放文字宽度 */
+  @media (max-width: 1024px) {
     .profile-wrap {
       flex-direction: column-reverse;
       align-items: center;            
