@@ -57,11 +57,19 @@ author_profile: true
       color: #ffffff;            /* 文字保持白色 */
     }
   }
+  .coauthor {
+    color: #0056b3 !important;        /* 经典的学术蓝 */
+    text-decoration: none !important; /* 强制去掉下划线 */
+    border-bottom: none !important;   /* 防止某些模板用边框伪装下划线 */
+  }
+  .coauthor:hover {
+    color: #003d82 !important;        /* 鼠标放上去时颜色稍微加深，替代下划线的互动感 */
+  }
 </style>
 
 ## Working Papers
 
-**"Communication Costs, Direct Flights and International Trade"** <span class="jmp-tag">Job Market Paper</span> <br> (with <a href="https://www.furusawa.e.u-tokyo.ac.jp/home/" target="_blank">Taiji Furusawa</a>, <a href="http://www.hwtang.com" target="_blank">Heiwai Tang</a>, and <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank">Chang Sun</a>), conditionally accepted, *Journal of International Economics*, Aug 2026.
+**"Communication Costs, Direct Flights and International Trade"** <span class="jmp-tag">Job Market Paper</span> <br> (with <a href="https://www.furusawa.e.u-tokyo.ac.jp/home/" target="_blank" class="coauthor">Taiji Furusawa</a>, <a href="http://www.hwtang.com" target="_blank" class="coauthor">Heiwai Tang</a>, and <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank" class="coauthor">Chang Sun</a>), conditionally accepted, *Journal of International Economics*, Aug 2026.
 
 <details>
   <summary class="abstract-summary">
@@ -88,7 +96,7 @@ author_profile: true
   </p>
 </details>
 
-**"Production and Ownership Networks"** <br> (with <a href="https://sites.google.com/view/chengchenwebpage/home?authuser=0" target="_blank">Cheng Chen</a>, <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank">Chang Sun</a>, and <a href="https://www.rieti.go.jp/users/zhang-hong-yong/index_en.html" target="_blank">Hongyong Zhang</a>), Oct 2026.
+**"Production and Ownership Networks"** <br> (with <a href="https://sites.google.com/view/chengchenwebpage/home?authuser=0" target="_blank" class="coauthor">Cheng Chen</a>, <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank" class="coauthor">Chang Sun</a>, and <a href="https://www.rieti.go.jp/users/zhang-hong-yong/index_en.html" target="_blank" class="coauthor">Hongyong Zhang</a>), Oct 2026.
 
 <details>
   <summary class="abstract-summary">
@@ -104,4 +112,4 @@ author_profile: true
 ---
 
 ## Work in Progress
-**"Firm-specific Policy, Resource Allocation, and Optimal Tariffs"** <br> (with <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank">Chang Sun</a>).
+**"Firm-specific Policy, Resource Allocation, and Optimal Tariffs"** <br> (with <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank" class="coauthor">Chang Sun</a>).
