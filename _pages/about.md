@@ -10,59 +10,37 @@ redirect_from:
 <style>
   /* 1. 常规横向电脑屏幕（横屏，且宽度较大） */
   @media (min-width: 1025px) and (orientation: landscape) {
-    .page__title {
-      margin-top: 8px !important; /* 你之前在横屏测试完美的数值 */
-    }
+    .page__title { margin-top: 8px !important; }
   }
 
   /* 2. 竖向大显示器 / 平板电脑（竖屏，且宽度足以并排显示左右两列） */
   @media (min-width: 768px) and (orientation: portrait) {
-    .page__title {
-      /* 请在你的大竖屏上用审查元素测试，填入能让它对齐的精确数值（如 20px 或 24px） */
-      margin-top: 24px !important; 
-    }
+    .page__title { margin-top: 24px !important; }
   }
 
-  /* 彻底隐藏左侧空头像占位符，消除基础误差 */
-  .author__avatar {
-    display: none !important;
-  }
+  /* 彻底隐藏左侧空头像占位符 */
+  .author__avatar { display: none !important; }
 
-  /* ---------------- 下方保留你的照片响应式排版 ---------------- */
+  /* ---------------- 3. 照片与文字自适应排版 ---------------- */
   .profile-wrap {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-wrap: wrap-reverse; /* 空间不足时自动换行，且照片在文字上方 */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     margin-top: 30px;
-    gap: 30px; /* 添加 gap 增加呼吸感 */
-  }
-  .profile-text {
-    flex: 1;
-    text-align: left;
-  }
-  .profile-pic {
-    width: 320px; /* 桌面端稍微把照片调小一点，给文字留更多空间 */
-    border-radius: 8px;
-    flex-shrink: 0;
-    margin-top: 5px;
   }
   
-  /* 关键修改：将断点扩大到 1024px，让 iPad (横/竖屏) 也采用上下堆叠，释放文字宽度 */
-  @media (max-width: 1024px) {
-    .profile-wrap {
-      flex-direction: column-reverse;
-      align-items: center;            
-    }
-    .profile-text {
-      padding-right: 0; 
-      width: 100%;                    
-    }
-    .profile-pic {
-      width: 100%; 
-      max-width: 320px;               
-      margin-bottom: 30px;            
-      margin-top: 10px;
-    }
+  .profile-text {
+    flex: 1 1 400px; /* 文字区最小宽度 400px，低于此值则自动触发换行，拒绝挤压 */
+    text-align: left;
+  }
+  
+  .profile-pic {
+    flex: 0 0 auto;
+    width: 320px;
+    max-width: 100%;
+    border-radius: 8px;
   }
 </style>
 
