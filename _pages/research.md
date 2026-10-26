@@ -61,7 +61,7 @@ author_profile: true
 
 ## Working Papers
 
-**"Communication Costs, Direct Flights and International Trade"** <span class="jmp-tag">Job Market Paper</span> <br> (with Taiji Furusawa, Heiwai Tang, and Chang Sun), revise and resubmit, *Journal of International Economics*, Aug 2026.
+**"Communication Costs, Direct Flights and International Trade"** <span class="jmp-tag">Job Market Paper</span> <br> (with <a href="https://www.furusawa.e.u-tokyo.ac.jp/home/" target="_blank">Taiji Furusawa</a>, <a href="http://www.hwtang.com" target="_blank">Heiwai Tang</a>, and <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank">Chang Sun</a>), conditionally accepted, *Journal of International Economics*, Aug 2026.
 
 <details>
   <summary class="abstract-summary">
@@ -88,7 +88,7 @@ author_profile: true
   </p>
 </details>
 
-**"Production and Ownership Networks"** (with Cheng Chen, Chang Sun, and Hongyong Zhang), Oct 2026.
+**"Production and Ownership Networks"** <br> (with <a href="https://sites.google.com/view/chengchenwebpage/home?authuser=0" target="_blank">Cheng Chen</a>, <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank">Chang Sun</a>, and <a href="https://www.rieti.go.jp/users/zhang-hong-yong/index_en.html" target="_blank">Hongyong Zhang</a>), Oct 2026.
 
 <details>
   <summary class="abstract-summary">
@@ -104,4 +104,4 @@ author_profile: true
 ---
 
 ## Work in Progress
-**"Firm-specific Policy, Resource Allocation, and Optimal Tariffs"** (with Chang Sun).
+**"Firm-specific Policy, Resource Allocation, and Optimal Tariffs"** <br> (with <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank">Chang Sun</a>).
