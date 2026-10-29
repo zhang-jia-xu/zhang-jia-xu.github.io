@@ -71,5 +71,5 @@ redirect_from:
     
   </div>
 
-  <img class="profile-pic" src="/images/photo2.JPG" alt="Jiaxu Zhang, Ph.D. candidate in Management and Strategy at HKU">
+  <img class="profile-pic" src="/images/photo2.JPG" alt="Zhang Jiaxu, Ph.D. candidate in Management and Strategy at HKU">
 </div>
