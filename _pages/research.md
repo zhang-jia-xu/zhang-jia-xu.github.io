@@ -80,12 +80,15 @@ author_profile: true
 
 ## Job Market Paper
 **"Vertical Integration and the Sourcing Style"**, Oct 2026.
-*Draft available upon request.*
 
 <details>
-  <summary class="abstract-summary">
+  <!-- <summary class="abstract-summary">
     <b>[ <span class="arrow-icon">&#9654;</span> Abstract ]</b>
     <span style="margin-left: 15px;"><b>[ <a href="mailto:zhjiaxu@connect.hku.hk?subject=Request for Draft: Vertical Integration and the Sourcing Style">Request Draft</a> ]</b></span>
+  </summary> -->
+  <summary class="abstract-summary">
+    <b>[ <span class="arrow-icon">&#9654;</span> Abstract ]</b>
+    <span style="margin-left: 15px;"><b>[ <a href="/files/paper_SourcingStyle.pdf">Working Paper</a> ]</b></span>
   </summary>
   
   <p style="margin-top: 10px; margin-bottom: 1.5em; text-align: left;">
@@ -107,7 +110,7 @@ author_profile: true
   </p>
 </details>
 
-**"Production and Ownership Networks"** <br> (with <a href="https://sites.google.com/view/chengchenwebpage/home?authuser=0" target="_blank" class="coauthor">Cheng Chen</a>, <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank" class="coauthor">Chang Sun</a>, and <a href="https://www.rieti.go.jp/users/zhang-hong-yong/index_en.html" target="_blank" class="coauthor">Hongyong Zhang</a>), Nov 2025.
+**"Production and Ownership Networks"** (with <a href="https://sites.google.com/view/chengchenwebpage/home?authuser=0" target="_blank" class="coauthor">Cheng Chen</a>, <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank" class="coauthor">Chang Sun</a>, and <a href="https://www.rieti.go.jp/users/zhang-hong-yong/index_en.html" target="_blank" class="coauthor">Hongyong Zhang</a>), Nov 2025.
 
 <details>
   <summary class="abstract-summary">
@@ -123,4 +126,4 @@ author_profile: true
 ---
 
 ## Work in Progress
-**"Firm-specific Policy, Resource Allocation, and Optimal Tariffs"** <br> (with <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank" class="coauthor">Chang Sun</a>).
+**"Firm-specific Policy, Resource Allocation, and Optimal Tariffs"** (with <a href="https://pweb.fbe.hku.hk/~sunc/" target="_blank" class="coauthor">Chang Sun</a>).
