@@ -63,7 +63,7 @@ redirect_from:
 
 <div class="profile-wrap">
   <div class="profile-text">
-    <p>I am a Ph.D. candidate in Management and Strategy (Econ track) at the University of Hong Kong. I obtained a Bachelor of Economics degree from Wuhan University and a Master of Economics degree from the University of Hong Kong.</p>
+    <p>I am a Ph.D. candidate in Management and Strategy (Economics track) at the University of Hong Kong. I obtained a Bachelor of Economics degree from Wuhan University and a Master of Economics degree from the University of Hong Kong.</p>
     
     <p>My research interests lie in international trade, organizational economics, and applied microeconomics. My work primarily focuses on global sourcing, production networks, and supply chain reallocation, bridging theoretical models with both structural and reduced-form empirical analyses.</p>
     
