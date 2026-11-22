@@ -79,7 +79,7 @@ author_profile: true
 </style>
 
 ## Job Market Paper
-**"Vertical Integration and the Sourcing Style"**, Oct 2026.
+**"Vertical Integration and the Sourcing Style"**, Nov 2026.
 
 <details>
   <!-- <summary class="abstract-summary">
